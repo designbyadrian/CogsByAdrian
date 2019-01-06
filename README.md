@@ -4,8 +4,9 @@
 [![Discord python framework][badge-discord]][discord.py]
 ![Version][badge-version]
 
-Various fun and/or useful plugins for [Discord Red][discord-red]
-To add the cogs to your instance please do: `[p]repo add Trusty-cogs https://github.com/TrustyJAID/Trusty-cogs/`
+Various fun and/or useful plugins for [Discord Red][discord-red].
+
+To add the cogs to your instance please do: `[p]repo add CogsByAdrian https://github.com/designbyadrian/CogsByAdrian`
 
 ## Collection
 
