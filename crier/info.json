@@ -1,0 +1,11 @@
+{
+  "author": ["DesignByAdrian (ThinkAdrian#1186)"],
+  "install_msg": "Hear ye!",
+  "name": "Crier",
+  "disabled": false,
+  "short": "Announce messages in different channels",
+  "description": "Have the bot say or shout in a target channel",
+  "tags": ["say", "shout", "message", "announcements"],
+  "hidden": false,
+  "min_python_version": [3, 6, 0]
+}

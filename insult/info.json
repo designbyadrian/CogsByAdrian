@@ -1,0 +1,8 @@
+{
+  "author": ["DesignByAdrian (ThinkAdrian#1186)"],
+  "description": "Usage: [p]insult <user>\n",
+  "short": "Insult a user creatively.",
+  "name": "Insult",
+  "tags": ["fun"],
+  "requirements": ["requests"]
+}

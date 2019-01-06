@@ -1,0 +1,11 @@
+{
+  "author": ["DesignByAdrian (ThinkAdrian#1186)"],
+  "install_msg": "Bang bang, you're dead!",
+  "name": "Killer",
+  "disabled": false,
+  "short": "Do bad things to other users",
+  "description": "Slap, punch, stab unsuspecting neighbours!",
+  "tags": ["fun"],
+  "hidden": false,
+  "min_python_version": [3, 6, 0]
+}
