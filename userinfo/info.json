@@ -1,0 +1,7 @@
+{
+  "author": ["DesignByAdrian (ThinkAdrian#1186)"],
+  "DESCRIPTION": "Displays bite-sized user info, like [p]userid @user",
+  "SHORT": "Get bite-sized user info",
+  "NAME": "UserInfo",
+  "TAGS": ["user", "information", "mod"]
+}
