@@ -1,6 +1,6 @@
 {
   "author": ["DesignByAdrian (ThinkAdrian#1186)"],
-  "install_msg": "Hear ye!",
+  "install_msg": "Hear ye! This cog enables anyone to post a message to any channel! Please use the Permissions cog to change this behaviour. Enjoy!",
   "name": "Crier",
   "disabled": false,
   "short": "Announce messages in different channels",
