@@ -16,6 +16,7 @@ To add the cogs to your instance please do: `[p]repo add CogsByAdrian https://gi
 - **[Penis](#penis)** Detects users' penis size with maximum accuracy.
 - Inventory _TBA_
 - UrbanBot _TBA_
+- Responder _TBA_
 - TWSS _TBA_
 
 ### <a name="crier"></a>Crier
@@ -63,7 +64,7 @@ Convertion of the original TwentySix cog for V2.
 Please create a GitHub issue if you have any concerns.
 
 [badge-reddiscord]: https://img.shields.io/badge/Red--DiscordBot-V3-red.svg?style=flat-square
-[badge-version]: https://img.shields.io/badge/version-1.0.0-lightgrey.svg?style=flat-square
+[badge-version]: https://img.shields.io/badge/version-1.0.1-lightgrey.svg?style=flat-square
 [badge-discord]: https://img.shields.io/badge/discord-py-blue.svg?style=flat-square
 [discord.py]: https://github.com/Rapptz/discord.py
 [discord-red]: https://github.com/Cog-Creators/Red-DiscordBot
