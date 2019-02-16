@@ -13,7 +13,7 @@ class Insult(commands.Cog):
         }
 
         self.params = {
-            ('mode', 'random'),
+            'mode': 'random',
         }
 
     def getActors(self, bot, offender, target):
@@ -26,22 +26,24 @@ class Insult(commands.Cog):
             await ctx.send_help()
             return
 
-        response = aiohttp.get(
-            'https://lakerolmaker-insult-generator-v1.p.mashape.com/', headers=self.headers, params=self.params)
+        async with aiohttp.ClientSession(headers=self.headers) as session:
+            async with session.get('https://lakerolmaker-insult-generator-v1.p.mashape.com/', params=self.params) as resp:
 
-        if (response.status_code == 200):
+                if (resp.status == 200):
 
-            bot, offender, target = self.getActors(
-                ctx.bot.user, ctx.message.author, user)
+                    bot, offender, target = self.getActors(
+                        ctx.bot.user, ctx.message.author, user)
 
-            if target['id'] == bot['id']:
-                insult = "{}, {}!".format(
-                    offender['formatted'], response.text.lower())
-            else:
-                insult = "{}, {}!".format(
-                    target['formatted'], response.text.lower())
+                    text = await resp.text()
 
-            await ctx.send(insult)
+                    if target['id'] == bot['id']:
+                        insult = "{}, {}!".format(
+                            offender['formatted'], text.lower())
+                    else:
+                        insult = "{}, {}!".format(
+                            target['formatted'], text.lower())
 
-        else:
-            await ctx.send("I've got nothing to say to the likes of you (Code {})".format(response.status_code))
+                    await ctx.send(insult)
+
+                else:
+                    await ctx.send("I've got nothing to say to the likes of you (Code {})".format(resp.status))
