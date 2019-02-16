@@ -19,7 +19,7 @@ class Crier(commands.Cog):
            Usage: [p]say #channelName Hear ye!"""
 
         try:
-            await channel.send_filtered(message)
+            await ctx.bot.send_filtered(channel, content=message)
         except discord.Forbidden:
             await ctx.send('❌ I\'m not allowed to do that, Dave')
         except discord.HTTPException:
