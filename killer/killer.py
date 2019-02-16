@@ -102,7 +102,7 @@ class Killer(commands.Cog):
 
             if diceroll > 89:
                 message2 = "\"Omae wa mou shindeiru\", says {}, before {} explodes into a cloud of blood and guts. 💥🤯💥 👈😎".format(
-                    killer['formatted', target['formatted']])
+                    killer['formatted'], target['formatted'])
 
             elif diceroll > 59:
                 message2 = "and a flurry of punches break every bone in {}'s body! Ora! Ora! Ora! Ora! 😣🤛🤛🤛 😡".format(

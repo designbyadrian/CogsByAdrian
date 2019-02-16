@@ -1,4 +1,4 @@
-import requests
+import aiohttp
 import discord
 from redbot.core import commands
 
@@ -26,7 +26,7 @@ class Insult(commands.Cog):
             await ctx.send_help()
             return
 
-        response = requests.get(
+        response = aiohttp.get(
             'https://lakerolmaker-insult-generator-v1.p.mashape.com/', headers=self.headers, params=self.params)
 
         if (response.status_code == 200):
@@ -40,6 +40,8 @@ class Insult(commands.Cog):
             else:
                 insult = "{}, {}!".format(
                     target['formatted'], response.text.lower())
+
+            await ctx.send(insult)
 
         else:
             await ctx.send("I've got nothing to say to the likes of you (Code {})".format(response.status_code))
