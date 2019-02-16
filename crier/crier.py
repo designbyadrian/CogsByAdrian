@@ -14,7 +14,7 @@ class Crier(commands.Cog):
     async def say(self, ctx, channel: discord.TextChannel, *, message:str):
         """Echo message into other channel. Emojis and @s work as well.
         
-           Usage: [p]say @channelName Hear ye!"""
+           Usage: [p]say #channelName Hear ye!"""
 
         try:
           await channel.send(message)
@@ -29,7 +29,7 @@ class Crier(commands.Cog):
            
            Excludes all characters except A-Z 0-9
         
-           Usage: [p]shout @channelName Hear ye!"""
+           Usage: [p]shout #channelName Hear ye!"""
 
         blocks = ""
 
