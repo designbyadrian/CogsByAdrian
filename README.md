@@ -17,6 +17,7 @@ To add the cogs to your instance please do: `[p]repo add CogsByAdrian https://gi
 - **[UserInfo](#userinfo)** Displays bite-sized user info
 - Lootbox _TBA_
 - UrbanBot _TBA_
+- Responder _TBA_
 - TWSS _TBA_
 
 ### <a name="crier"></a>Crier

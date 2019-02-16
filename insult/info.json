@@ -4,5 +4,5 @@
   "short": "Insult a user creatively.",
   "name": "Insult",
   "tags": ["fun"],
-  "requirements": ["requests"]
+  "requirements": ["aiohttp"]
 }
