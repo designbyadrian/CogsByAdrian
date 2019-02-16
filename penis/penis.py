@@ -23,7 +23,13 @@ class Penis(commands.Cog):
 
         for user in users:
             random.seed(str(user.id))
-            dongs[user] = "8{}D".format("=" * random.randint(0, 30))
+
+            if ctx.bot.user.id == user.id:
+                length = 50
+            else:
+                length = random.randint(0, 30)
+
+            dongs[user] = "8{}D".format("=" * length)
 
         random.setstate(state)
         dongs = sorted(dongs.items(), key=lambda x: x[1])
