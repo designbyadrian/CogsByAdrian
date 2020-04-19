@@ -13,7 +13,7 @@ class Crier(commands.Cog):
                         ':four:', ':five:', ':six:', ':seven:', ':eight:', ':nine:']
 
     @commands.command()
-    async def say(self, ctx, channel: discord.TextChannel, *, message: str):
+    async def csay(self, ctx, channel: discord.TextChannel, *, message: str):
         """Echo message into other channel. Emojis and @s work as well.
 
            Usage: [p]say #channelName Hear ye!"""
