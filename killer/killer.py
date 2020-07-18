@@ -129,10 +129,10 @@ class Killer(commands.Cog):
 
         if target['id'] == bot['id']:  # tryng to shoot the bot, eh?
 
-            message1 = "{} raises their dagger at Geraldo... 😠🔪 🤖".format(
-                killer['nick'])
-            message2 = "but Geraldo teleports behind {} and strikes! 😵💫 ⚔️🤖 {}".format(
-                killer['formatted'], '`"Nothing personell, kid"`')
+            message1 = "{} raises their dagger at {}... 😠🔪 🤖".format(
+                killer['nick'], bot['nick'])
+            message2 = "but {} teleports behind {} and strikes! 😵💫 ⚔️🤖 {}".format(
+                bot['nick'], killer['formatted'], '`"Nothing personell, kid"`')
 
         elif killer['id'] == target['id']:  # wants to slap themselves
 
@@ -235,7 +235,7 @@ class Killer(commands.Cog):
         diceroll = random.randint(0, 100)
 
         if target['id'] == bot['id']:  # love the bot
-            message = "{} loves Geraldo 😍 🤖".format(killer['nick'])
+            message = "{} loves {} 😍 🤖".format(killer['nick'], bot['nick'])
         elif killer['id'] == target['id']:  # loves themselves
             message = "{} loves themselves, because nobody else does 😕".format(
                 killer['nick'])
@@ -264,8 +264,8 @@ class Killer(commands.Cog):
 
         if target['id'] == bot['id']:  # sex the bot
             if diceroll > 89:
-                message = "{} is taken by Geraldo on top of a stuffed unicorn 😝🦄🤖".format(
-                    killer['formatted'])
+                message = "{} is taken by {} on top of a stuffed unicorn 😝🦄🤖".format(
+                    killer['formatted'], bot['nick'])
             else:
                 message = "Everbody wants to sex {}, get in line, loser!".format(
                     bot['nick'])
