@@ -241,7 +241,7 @@ class Killer(commands.Cog):
                 killer['nick'])
         else:
             if diceroll > 90:
-                message = "Three cummie, four cummie, five cummie, six, {} loves {} but they also love dicks 💦".format(
+                message = "{} and {} sitting under a tree... 💕".format(
                     killer['formatted'], target['formatted'])
             elif diceroll > 10:
                 message = "{} loves {} aww... 😍 😊".format(
