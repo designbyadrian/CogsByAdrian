@@ -27,7 +27,7 @@ class Insult(commands.Cog):
             return
 
         async with aiohttp.ClientSession(headers=self.headers) as session:
-            async with session.get('https://lakerolmaker-insult-generator-v1.p.mashape.com/', params=self.params) as resp:
+            async with session.get('https://evilinsult.com/generate_insult.php?lang=en&type=text', params=self.params) as resp:
 
                 if (resp.status == 200):
 
