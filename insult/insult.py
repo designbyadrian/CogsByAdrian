@@ -37,10 +37,10 @@ class Insult(commands.Cog):
                     text = await resp.text()
 
                     if target['id'] == bot['id']:
-                        insult = "{}, {}!".format(
+                        insult = "{}, {}".format(
                             offender['formatted'], text.lower())
                     else:
-                        insult = "{}, {}!".format(
+                        insult = "{}, {}".format(
                             target['formatted'], text.lower())
 
                     await ctx.send(insult)
