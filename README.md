@@ -35,7 +35,7 @@ To add the cogs to your instance please do: `[p]repo add CogsByAdrian https://gi
 [p]insult @user
 ```
 
-Fetches random insult from https://market.mashape.com/Lakerolmaker/insult-generator and makes sure the user runs away crying!
+Fetches random insult from https://evilinsult.com/generate_insult.php?lang=en&type=text and makes sure the user runs away crying!
 
 ### <a name="killer"></a>Killer
 
