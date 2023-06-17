@@ -3,5 +3,6 @@
   "DESCRIPTION": "Usage: [p]penis <user>\nThis is 100% accurate.",
   "SHORT": "Detects users' penis size with maximum accuracy.",
   "NAME": "Penis",
-  "TAGS": ["fun"]
+  "TAGS": ["fun"],
+  "min_bot_version": "3.5.0"
 }

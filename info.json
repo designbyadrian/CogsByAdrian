@@ -5,5 +5,6 @@
     "name" : "CogsByAdrian",
     "short" : "Cogs by ThinkAdrian inspired by many.",
     "description" : "A few fun cogs for your repo and your general desire to abuse your moderator powers",
-    "tags" : ["Fun", "Crier", "Shout", "Say", "Insult", "Penis"]
+    "tags" : ["Fun", "Crier", "Shout", "Say", "Insult", "Penis"],
+    "min_bot_version": "3.5.0"
 }
