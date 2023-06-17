@@ -1,4 +1,4 @@
 from .penis import Penis
 
-def setup(bot):
+async def setup(bot):
   bot.add_cog(Penis())

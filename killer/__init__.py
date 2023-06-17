@@ -1,4 +1,4 @@
 from .killer import Killer
 
-def setup(bot):
-  bot.add_cog(Killer())
+async def setup(bot):
+  await bot.add_cog(Killer())

@@ -1,4 +1,4 @@
 from .crier import Crier
 
-def setup(bot):
+async def setup(bot):
   bot.add_cog(Crier())
